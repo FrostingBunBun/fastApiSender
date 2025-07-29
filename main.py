@@ -3,7 +3,8 @@ import sqlite3
 from typing import List, Dict, Any
 
 app = FastAPI()
-DB_PATH = "C:\Users\Halof\Desktop\AssSetToes\Assetto Corsa Dedicated Server\Stracker\stracker.db3"
+DB_PATH = r"C:\Program Files (x86)\Steam\steamapps\common\Assetto Corsa Dedicated Server\Stracker\stracker.db3"
+
 
 def fetch_all(query: str) -> List[Dict[str, Any]]:
     conn = sqlite3.connect(DB_PATH)

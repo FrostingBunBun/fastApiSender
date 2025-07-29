@@ -18,3 +18,5 @@ IF NOT EXIST "%VENV_PATH%\Scripts\activate.bat" (
 
 echo [*] Starting FastAPI server...
 uvicorn main:app --host 0.0.0.0 --port 8081
+
+pause
